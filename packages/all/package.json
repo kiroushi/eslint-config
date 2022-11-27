@@ -1,0 +1,28 @@
+{
+  "name": "@kiroushi/eslint-config",
+  "version": "0.0.1",
+  "author": "Javier Pérez <kiroushi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kiroushi/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiroushi/eslint-config.git",
+    "directory": "packages/all"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@kiroushi/eslint-config-vue": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "8.28.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  }
+}

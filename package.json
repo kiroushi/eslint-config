@@ -1,0 +1,25 @@
+{
+  "name": "@kiroushi/eslint-config-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Javier Pérez <kiroushi@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiroushi/eslint-config.git"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "lint:fix": "eslint --fix *.js",
+    "test": "eslint test/**/*.spec.js --report-unused-disable-directives",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag"
+  },
+  "devDependencies": {
+    "@kiroushi/eslint-config": "*",
+    "eslint": "8.28.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  }
+}
