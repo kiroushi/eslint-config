@@ -10,16 +10,22 @@ My highly-opinionated ESLint config for TypeScript + Vue projects, based on my l
 
 ### Install
 
-#### Vue
+#### Vue 3
 
 ```bash
 pnpm add -D eslint @kiroushi/eslint-config
 ```
 
+#### Vue 2
+
+```bash
+pnpm add -D eslint @kiroushi/eslint-config-vue2
+```
+
 #### Just TypeScript
 
 ```bash
-pnpm add -D eslint @kiroushi/eslint-config
+pnpm add -D eslint @kiroushi/eslint-config-base
 ```
 
 ## License
