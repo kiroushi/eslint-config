@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.BaseConfig} */
 module.exports = {
   extends: [
-    '@kiroushi/eslint-config-vue',
+    '@kiroushi/eslint-config-vue3',
   ],
 }

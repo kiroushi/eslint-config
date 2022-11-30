@@ -8,3 +8,8 @@ export function isFunction (value) {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const isFooAFunction = isFunction(() => {})
+
+// eslint-disable-next-line require-await
+export async function notAsyncFunction () {
+  return 'notAsync'
+}

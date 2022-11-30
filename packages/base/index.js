@@ -46,6 +46,7 @@ module.exports = {
     'no-return-await': 'error',
     'no-var': 'error',
     'object-shorthand': ['error', 'always'],
+    'require-await': 'error',
 
     // TypeScript
     '@typescript-eslint/no-empty-function': 'off',

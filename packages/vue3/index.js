@@ -79,21 +79,10 @@ module.exports = {
     'vue/quote-props': ['error', 'consistent-as-needed'],
     'vue/template-curly-spacing': 'error',
 
-    // Vue 3 related rules
-    'vue/multi-word-component-names': 'off',
     'vue/no-v-text-v-html-on-component': 'off',
-    'vue/v-on-event-hyphenation': 'off',
+    'vue/v-on-event-hyphenation': 'error',
 
-    // These can only be re-enabled when using Vue 3
-    'vue/no-deprecated-destroyed-lifecycle': 'off',
-    'vue/no-deprecated-v-on-native-modifier': 'off',
-    'vue/no-v-for-template-key-on-child': 'off',
-
-    // Forward-compatible changes that need to be sorted out
-    'vue/no-deprecated-dollar-listeners-api': 'warn',
-    'vue/no-deprecated-dollar-scopedslots-api': 'warn',
-    'vue/no-deprecated-events-api': 'warn',
-    'vue/no-reserved-component-names': ['warn', {
+    'vue/no-reserved-component-names': ['error', {
       disallowVueBuiltInComponents: true,
       disallowVue3BuiltInComponents: true,
     }],
