@@ -22,7 +22,6 @@ module.exports = {
 
   rules: {
     'vue/no-lone-template': 'error',
-    'vue/no-mutating-props': 'off',
     'vue/require-default-prop': 'off',
     'vue/require-explicit-emits': 'error',
     'vue/this-in-template': 'error',
@@ -61,6 +60,7 @@ module.exports = {
         ignoreStrings: true,
       },
     ],
+    'vue/no-restricted-component-options': ['error', 'mixins'],
     'vue/no-useless-v-bind': 'error',
     'vue/object-curly-newline': ['error', { multiline: true, consistent: true }],
     'vue/object-curly-spacing': ['error', 'always'],

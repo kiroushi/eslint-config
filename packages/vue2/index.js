@@ -5,6 +5,12 @@ module.exports = {
   ],
 
   rules: {
+    // ignoring Vue versions below 2.7 “Naruto”
+    'vue/no-unsupported-features': ['error', {
+      version: '^2.7.0',
+      ignores: [],
+    }],
+
     // destroyed hook still applies to Vue 2.7 with options API
     'vue/no-deprecated-destroyed-lifecycle': 'off',
     'vue/no-deprecated-v-on-native-modifier': 'off',
