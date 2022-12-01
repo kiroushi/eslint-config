@@ -1,6 +1,6 @@
 {
   "name": "@kiroushi/eslint-config-monorepo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "packageManager": "^pnpm@7.0.0",
   "author": "Javier Pérez <kiroushi@gmail.com>",
