@@ -1,6 +1,6 @@
 {
   "name": "@kiroushi/eslint-config-vue2",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "packageManager": "^pnpm@7.0.0",
   "author": "Javier Pérez <kiroushi@gmail.com>",
   "license": "MIT",
