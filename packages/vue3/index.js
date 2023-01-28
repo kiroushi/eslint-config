@@ -93,6 +93,11 @@ module.exports = {
         avoidQuotes: true,
       },
     ],
+    'vue/padding-lines-in-component-definition': ['error', {
+      betweenOptions: 'always',
+      withinOption: 'never',
+      groupSingleLineProperties: true,
+    }],
     'vue/prefer-template': 'error',
     'vue/quote-props': ['error', 'consistent-as-needed'],
     'vue/template-curly-spacing': 'error',
