@@ -2,7 +2,7 @@
   "name": "@kiroushi/eslint-config-monorepo",
   "version": "0.0.6",
   "private": true,
-  "packageManager": "^pnpm@7.0.0",
+  "packageManager": "pnpm@8.6.11",
   "author": "Javier Pérez <kiroushi@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -17,8 +17,8 @@
   "devDependencies": {
     "@kiroushi/eslint-config": "*",
     "bumpp": "8.2.1",
-    "eslint": "8.32.0",
-    "typescript": "^4.9.4"
+    "eslint": "8.46.0",
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"

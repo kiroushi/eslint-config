@@ -1,7 +1,6 @@
 {
   "name": "@kiroushi/eslint-config-vue2",
   "version": "0.0.6",
-  "packageManager": "^pnpm@7.0.0",
   "author": "Javier Pérez <kiroushi@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/kiroushi/eslint-config",
@@ -21,7 +20,7 @@
     "@kiroushi/eslint-config-vue3": "workspace:*"
   },
   "devDependencies": {
-    "eslint": "8.32.0"
+    "eslint": "8.46.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
