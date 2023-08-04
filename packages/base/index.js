@@ -6,6 +6,7 @@ module.exports = {
     node: true,
   },
   reportUnusedDisableDirectives: true,
+  plugins: ['simple-import-sort'],
   extends: [
     'standard',
     'plugin:jsonc/recommended-with-jsonc',
@@ -31,20 +32,63 @@ module.exports = {
     '__snapshots__',
   ],
   rules: {
-    'array-bracket-newline': ['error', {
-      multiline: true,
-      minItems: 2,
-    }],
-    'array-element-newline': ['error', {
-      multiline: true,
-      minItems: 2,
-    }],
-    'brace-style': ['error', '1tbs', {
-      allowSingleLine: false,
-    }],
-    'comma-dangle': ['error', 'always-multiline'],
-    curly: ['error', 'multi-line'],
-    'max-len': ['error',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          [
+            '^\\u0000',
+            '^vue$|vue-demi|vue/types.*|vue-router$|vuex$',
+            '^[^.]',
+            '^@/.*',
+            '^[^.]',
+            '^\\.',
+          ],
+        ],
+      },
+    ],
+
+    'import/first': 'error',
+    'import/newline-after-import': [
+      'error',
+      { count: 1, considerComments: true },
+    ],
+    'import/no-duplicates': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/no-self-import': 'error',
+    'import/no-unresolved': 'off',
+
+    'array-bracket-newline': [
+      'error',
+      {
+        multiline: true,
+        minItems: 2,
+      },
+    ],
+    'array-element-newline': [
+      'error',
+      {
+        multiline: true,
+        minItems: 2,
+      },
+    ],
+    'brace-style': [
+      'error',
+      '1tbs',
+      {
+        allowSingleLine: false,
+      },
+    ],
+    'comma-dangle': [
+      'error',
+      'always-multiline',
+    ],
+    curly: [
+      'error',
+      'multi-line',
+    ],
+    'max-len': [
+      'error',
       {
         code: 120,
         ignoreTemplateLiterals: true,
@@ -53,7 +97,10 @@ module.exports = {
     ],
     'no-return-await': 'error',
     'no-var': 'error',
-    'object-shorthand': ['error', 'always'],
+    'object-shorthand': [
+      'error',
+      'always',
+    ],
     'require-await': 'error',
 
     // TypeScript
@@ -64,7 +111,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.json', '*.json5'],
+      files: [
+        '*.json',
+        '*.json5',
+      ],
       parser: 'jsonc-eslint-parser',
     },
     {
