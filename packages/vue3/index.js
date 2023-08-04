@@ -47,7 +47,7 @@ module.exports = {
     }],
     'vue/custom-event-name-casing': ['warn', 'camelCase'],
     'vue/define-macros-order': ['error', {
-      order: ['defineProps', 'defineEmits'],
+      order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
     }],
     'vue/first-attribute-linebreak': ['error', {
       singleline: 'beside',
