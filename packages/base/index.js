@@ -31,6 +31,14 @@ module.exports = {
     '__snapshots__',
   ],
   rules: {
+    'array-bracket-newline': ['error', {
+      multiline: true,
+      minItems: 2,
+    }],
+    'array-element-newline': ['error', {
+      multiline: true,
+      minItems: 2,
+    }],
     'brace-style': ['error', '1tbs', {
       allowSingleLine: false,
     }],
