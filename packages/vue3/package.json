@@ -1,6 +1,6 @@
 {
   "name": "@kiroushi/eslint-config-vue3",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Javier Pérez <kiroushi@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/kiroushi/eslint-config",
